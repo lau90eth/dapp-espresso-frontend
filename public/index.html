@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  if (typeof global === 'undefined') {
+    window.global = window;
+  }
+  if (typeof process === 'undefined') {
+    window.process = { env: {} };
+  }
+</script>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
